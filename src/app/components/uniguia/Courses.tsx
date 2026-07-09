@@ -46,7 +46,7 @@ const subjects: Subject[] = [
     bg: '#eff6ff',
     topics: ['Limites e Continuidade', 'Derivadas', 'Regras de Derivação', 'Integrais', 'Teorema Fundamental'],
     lessons: [
-      { id: 1, title: 'Introdução ao Cálculo e Limites', duration: '42min', videoUrl: null },
+      { id: 1, title: 'Introdução ao Cálculo e Limites', duration: '42min', videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
       { id: 2, title: 'Continuidade de Funções',          duration: '38min', videoUrl: null },
       { id: 3, title: 'Derivadas — Conceito e Notação',   duration: '51min', videoUrl: null },
       { id: 4, title: 'Regra da Cadeia e Derivação Implícita', duration: '47min', videoUrl: null },
