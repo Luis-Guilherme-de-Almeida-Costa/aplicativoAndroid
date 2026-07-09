@@ -19,7 +19,8 @@ export type Screen =
   | 'research'
   | 'extension'
   | 'workload'
-  | 'courses';
+  | 'courses'
+  | 'faculty';
 
 export interface NavProps {
   onNavigate: (screen: Screen) => void;

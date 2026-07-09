@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Home, BookOpen, Calendar, Award, Briefcase, FlaskConical, Leaf, User, Menu, X, Trophy, ChevronDown, BarChart2, GraduationCap } from 'lucide-react';
+import { Home, BookOpen, Calendar, Award, Briefcase, FlaskConical, Leaf, User, Menu, X, Trophy, ChevronDown, BarChart2, GraduationCap, Users } from 'lucide-react';
 import type { Screen } from './types';
 
 interface BottomNavProps {
@@ -23,9 +23,10 @@ const opportunityItems = [
 ];
 
 const bottomItems = [
-  { id: 'workload' as Screen, icon: BarChart2,      label: 'Carga Acadêmica' },
-  { id: 'courses'  as Screen, icon: GraduationCap,  label: 'Cursos' },
-  { id: 'profile'  as Screen, icon: User,           label: 'Perfil' },
+  { id: 'workload' as Screen, icon: BarChart2,     label: 'Carga Acadêmica' },
+  { id: 'courses'  as Screen, icon: GraduationCap, label: 'Cursos' },
+  { id: 'faculty'  as Screen, icon: Users,         label: 'Docentes' },
+  { id: 'profile'  as Screen, icon: User,          label: 'Perfil' },
 ];
 
 export default function BottomNav({ currentScreen, onNavigate }: BottomNavProps) {

@@ -23,8 +23,9 @@ import Research from './components/uniguia/Research';
 import Extension from './components/uniguia/Extension';
 import WorkloadAnalysis from './components/uniguia/WorkloadAnalysis';
 import Courses from './components/uniguia/Courses';
+import Faculty from './components/uniguia/Faculty';
 
-const bottomNavScreens: Screen[] = ['dashboard', 'subjects', 'timetable', 'scholarships', 'internships', 'research', 'extension', 'workload', 'courses', 'profile'];
+const bottomNavScreens: Screen[] = ['dashboard', 'subjects', 'timetable', 'scholarships', 'internships', 'research', 'extension', 'workload', 'courses', 'faculty', 'profile'];
 
 const screensThatNeedAvatar: Screen[] = [];
 
@@ -60,6 +61,7 @@ export default function App() {
       case 'extension':         return <Extension onNavigate={setScreen} />;
       case 'workload':          return <WorkloadAnalysis onNavigate={setScreen} />;
       case 'courses':           return <Courses onNavigate={setScreen} />;
+      case 'faculty':           return <Faculty onNavigate={setScreen} />;
       default:                  return <Dashboard onNavigate={setScreen} />;
     }
   };
