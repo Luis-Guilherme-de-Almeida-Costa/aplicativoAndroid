@@ -72,10 +72,10 @@ const subjects: Subject[] = [
     topics: ['Limites e Continuidade', 'Derivadas', 'Regras de Derivação', 'Integrais', 'Teorema Fundamental'],
     lessons: [
       { id: 1, title: 'Introdução ao Cálculo e Limites',       duration: '42min', videoUrl: 'https://www.youtube.com/embed/sjssQaCNnYg' },
-      { id: 2, title: 'Continuidade de Funções',               duration: '38min', videoUrl: null },
-      { id: 3, title: 'Derivadas — Conceito e Notação',        duration: '51min', videoUrl: null },
-      { id: 4, title: 'Regra da Cadeia e Derivação Implícita', duration: '47min', videoUrl: null },
-      { id: 5, title: 'Integral Definida e Área',              duration: '55min', videoUrl: null },
+      { id: 2, title: 'Continuidade de Funções',               duration: '38min', videoUrl: 'https://www.youtube.com/embed/iiOrtGZVqnk' },
+      { id: 3, title: 'Derivadas — Conceito e Notação',        duration: '51min', videoUrl: 'https://www.youtube.com/embed/cWBEMN75IMc' },
+      { id: 4, title: 'Regra da Cadeia e Derivação Implícita', duration: '47min', videoUrl: 'https://www.youtube.com/embed/vmOuU7Fz0cg' },
+      { id: 5, title: 'Integral Definida e Área',              duration: '55min', videoUrl: 'https://www.youtube.com/embed/wv23YefHGJA' },
     ],
     // ── EXERCÍCIOS — CÁLCULO 1 ──────────────────────────────────────────────
     exercises: [
@@ -136,11 +136,11 @@ const subjects: Subject[] = [
     bg: '#f5f3ff',
     topics: ['Funções de Várias Variáveis', 'Derivadas Parciais', 'Integrais Duplas', 'Séries', 'EDO'],
     lessons: [
-      { id: 1, title: 'Funções de Várias Variáveis',          duration: '44min', videoUrl: null },
-      { id: 2, title: 'Derivadas Parciais e Gradiente',       duration: '49min', videoUrl: null },
-      { id: 3, title: 'Máximos e Mínimos Locais',             duration: '41min', videoUrl: null },
-      { id: 4, title: 'Integrais Duplas — Método de Fubini',  duration: '58min', videoUrl: null },
-      { id: 5, title: 'Introdução às EDOs',                   duration: '52min', videoUrl: null },
+      { id: 1, title: 'Funções de Várias Variáveis',          duration: '44min', videoUrl: 'https://www.youtube.com/embed/LmmPho49tDc' },
+      { id: 2, title: 'Derivadas Parciais e Gradiente',       duration: '49min', videoUrl: 'https://www.youtube.com/embed/eWzGNlFic4I' },
+      { id: 3, title: 'Máximos e Mínimos Locais',             duration: '41min', videoUrl: 'https://www.youtube.com/embed/dDwWaoJlSlA' },
+      { id: 4, title: 'Integrais Duplas — Método de Fubini',  duration: '58min', videoUrl: 'https://www.youtube.com/embed/nLdwgvvsvd8' },
+      { id: 5, title: 'Introdução às EDOs',                   duration: '52min', videoUrl: 'https://www.youtube.com/embed/wYLJBsaHHqY' },
     ],
     // ── EXERCÍCIOS — CÁLCULO 2 ──────────────────────────────────────────────
     exercises: [
@@ -196,11 +196,11 @@ const subjects: Subject[] = [
     bg: '#ecfeff',
     topics: ['Cinemática', 'Leis de Newton', 'Trabalho e Energia', 'Momento Linear', 'Colisões'],
     lessons: [
-      { id: 1, title: 'Grandezas Físicas e Vetores',  duration: '36min', videoUrl: null },
-      { id: 2, title: 'Cinemática — MRU e MRUV',      duration: '43min', videoUrl: null },
-      { id: 3, title: 'Segunda Lei de Newton',         duration: '50min', videoUrl: null },
-      { id: 4, title: 'Trabalho, Potência e Energia', duration: '48min', videoUrl: null },
-      { id: 5, title: 'Colisões e Conservação',       duration: '45min', videoUrl: null },
+      { id: 1, title: 'Grandezas Físicas e Vetores',  duration: '36min', videoUrl: 'https://www.youtube.com/embed/MLEZI03kUkE' },
+      { id: 2, title: 'Cinemática — MRU e MRUV',      duration: '43min', videoUrl: 'https://www.youtube.com/embed/C93tQjswQgU' },
+      { id: 3, title: 'Segunda Lei de Newton',         duration: '50min', videoUrl: 'https://www.youtube.com/embed/OgTVFIykPEI' },
+      { id: 4, title: 'Trabalho, Potência e Energia', duration: '48min', videoUrl: 'https://www.youtube.com/embed/3ESkxyY9qio' },
+      { id: 5, title: 'Colisões e Conservação',       duration: '45min', videoUrl: 'https://www.youtube.com/embed/s9odquXGzuQ' },
     ],
     // ── EXERCÍCIOS — FÍSICA 1 ───────────────────────────────────────────────
     exercises: [
