@@ -153,7 +153,7 @@ function TaskCard({ task }: { task: Task }) {
         <div className="px-2 py-0.5 rounded-full" style={{ background: pStyle.bg }}>
           <span style={{ color: pStyle.color, fontSize: '10px', fontWeight: '700' }}>{task.priority}</span>
         </div>
-        <span style={{ color: '#94a3b8', fontSize: '10px' }}>📅 {task.deadline}</span>
+        <span style={{ color: '#94a3b8', fontSize: '10px' }}> {task.deadline}</span>
       </div>
 
       <p style={{ color: '#0f172a', fontSize: '13px', fontWeight: '600', marginBottom: '6px', lineHeight: 1.3 }}>

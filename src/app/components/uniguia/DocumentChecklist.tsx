@@ -64,12 +64,12 @@ export default function DocumentChecklist({ onNavigate }: NavProps) {
           </div>
           {percent < 100 && (
             <p style={{ color: '#fde047', fontSize: '11px', marginTop: '6px' }}>
-              ⚠️ Inscrição incompleta — prazo: 15/06/2026
+               Inscrição incompleta — prazo: 15/06/2026
             </p>
           )}
           {percent === 100 && (
             <p style={{ color: '#4ade80', fontSize: '11px', marginTop: '6px' }}>
-              ✅ Documentação completa — pronto para enviar!
+               Documentação completa — pronto para enviar!
             </p>
           )}
         </div>
@@ -139,7 +139,7 @@ export default function DocumentChecklist({ onNavigate }: NavProps) {
           style={{ background: '#fff', borderRadius: '14px', padding: '14px', border: '1px solid #e2e8f0', marginTop: '4px' }}
         >
           <p className="font-semibold" style={{ color: '#334155', fontSize: '13px', marginBottom: '6px' }}>
-            📋 Como enviar os documentos
+             Como enviar os documentos
           </p>
           <ol className="flex flex-col gap-1.5">
             {[
@@ -189,7 +189,7 @@ export default function DocumentChecklist({ onNavigate }: NavProps) {
           }}
           disabled={percent < 100}
         >
-          {percent === 100 ? '✅ Enviar inscrição' : `Complete ${docs.length - doneCount} documento${docs.length - doneCount > 1 ? 's' : ''} restante${docs.length - doneCount > 1 ? 's' : ''}`}
+          {percent === 100 ? ' Enviar inscrição' : `Complete ${docs.length - doneCount} documento${docs.length - doneCount > 1 ? 's' : ''} restante${docs.length - doneCount > 1 ? 's' : ''}`}
         </button>
       </div>
     </div>

@@ -15,11 +15,11 @@ interface Notification {
 }
 
 const typeConfig = {
-  edital:  { icon: '📋', bg: '#fef9c3', border: '#fde047', color: '#92400e',  label: 'Edital'   },
-  prova:   { icon: '📝', bg: '#fef2f2', border: '#fecaca', color: '#991b1b',  label: 'Prova'    },
-  tarefa:  { icon: '✅', bg: '#eff6ff', border: '#bfdbfe', color: '#1e40af',  label: 'Tarefa'   },
-  bolsa:   { icon: '🏆', bg: '#dcfce7', border: '#86efac', color: '#15803d',  label: 'Bolsa'    },
-  sistema: { icon: '🔔', bg: '#f5f3ff', border: '#ddd6fe', color: '#6d28d9',  label: 'Sistema'  },
+  edital:  { icon: '', bg: '', border: '#ddd6fe', color: '#92400e',  label: 'Edital'   },
+  prova:   { icon: '', bg: '', border: '#ddd6fe', color: '#991b1b',  label: 'Prova'    },
+  tarefa:  { icon: '', bg: '', border: '#ddd6fe', color: '#1e40af',  label: 'Tarefa'   },
+  bolsa:   { icon: '', bg: '', border: '#ddd6fe', color: '#15803d',  label: 'Bolsa'    },
+  sistema: { icon: '', bg: '', border: '#ddd6fe', color: '#6d28d9',  label: 'Sistema'  },
 };
 
 const initialNotifications: Notification[] = [
@@ -31,13 +31,13 @@ const initialNotifications: Notification[] = [
     detail:
       'O prazo de inscrição do Edital Auxílio Moradia 2026/1 encerra no dia 15/06/2026.\n\n' +
       'Situação atual da sua inscrição:\n' +
-      '✅ Documento de identificação — enviado\n' +
-      '✅ Comprovante de matrícula — enviado\n' +
-      '✅ Dados bancários — enviado\n' +
-      '❌ Comprovante de renda — pendente\n' +
-      '❌ Comprovante de residência — pendente\n' +
-      '❌ Declaração de vulnerabilidade — pendente\n' +
-      '❌ Certidão de composição familiar — pendente\n\n' +
+      ' Documento de identificação — enviado\n' +
+      ' Comprovante de matrícula — enviado\n' +
+      ' Dados bancários — enviado\n' +
+      ' Comprovante de renda — pendente\n' +
+      ' Comprovante de residência — pendente\n' +
+      ' Declaração de vulnerabilidade — pendente\n' +
+      ' Certidão de composição familiar — pendente\n\n' +
       'Você completou 3 de 7 documentos (43%). Acesse o checklist para enviar os documentos restantes antes do prazo.\n\n' +
       'Dúvidas: dac.unb.br ou presencialmente no DAC — ICC Norte.',
     actions: [
@@ -54,11 +54,11 @@ const initialNotifications: Notification[] = [
     summary: 'Prova 2 marcada para 17/06 às 17h na sala FIS-A01/4.',
     detail:
       'Você tem uma prova se aproximando:\n\n' +
-      '📚 Disciplina: Física 1 (FIS0110)\n' +
-      '📅 Data: 17/06/2026 — quinta-feira\n' +
-      '🕐 Horário: 17h00\n' +
-      '📍 Local: Sala FIS-A01/4\n' +
-      '👨‍🏫 Professor: Prof. Paulo Costa\n\n' +
+      ' Disciplina: Física 1 (FIS0110)\n' +
+      ' Data: 17/06/2026 — quinta-feira\n' +
+      ' Horário: 17h00\n' +
+      ' Local: Sala FIS-A01/4\n' +
+      ' Professor: Prof. Paulo Costa\n\n' +
       'Conteúdo cobrado:\n' +
       '• Módulo 3 — Dinâmica: leis de Newton e aplicações\n' +
       '• Módulo 4 — Energia: trabalho, energia cinética e potencial, conservação\n\n' +
@@ -69,7 +69,6 @@ const initialNotifications: Notification[] = [
       'Dica: peça ajuda ao UniBot para montar um cronograma personalizado!',
     actions: [
       { label: 'Ver minhas provas', screen: 'exams' },
-      { label: 'Perguntar ao UniBot', screen: 'ai-assistant' },
     ],
     time: 'Há 1 hora',
     read: false,
@@ -81,11 +80,11 @@ const initialNotifications: Notification[] = [
     summary: 'PIBEX — Extensão Universitária 2026 abriu inscrições. Prazo: 25/06.',
     detail:
       'Uma oportunidade compatível com o seu perfil foi identificada:\n\n' +
-      '🌱 Programa: PIBEX — Extensão Universitária 2026\n' +
-      '🏛️ Órgão: DEX/UnB\n' +
-      '💰 Valor: R$ 400,00/mês por 12 meses\n' +
-      '📅 Prazo de inscrição: 25/06/2026\n' +
-      '📋 Edital: Nº 02/2026 — DEX\n\n' +
+      ' Programa: PIBEX — Extensão Universitária 2026\n' +
+      ' Órgão: DEX/UnB\n' +
+      ' Valor: R$ 400,00/mês por 12 meses\n' +
+      ' Prazo de inscrição: 25/06/2026\n' +
+      ' Edital: Nº 02/2026 — DEX\n\n' +
       'Por que você foi selecionado:\n' +
       '• Seu curso (Eng. de Software) tem projetos elegíveis no CIC/UnB\n' +
       '• Você marcou "Participar de extensão" como objetivo\n' +
@@ -110,19 +109,18 @@ const initialNotifications: Notification[] = [
     summary: '"Lista de Cálculo 3" vence amanhã (12/06). Itens pendentes no checklist.',
     detail:
       'A seguinte tarefa vence amanhã e ainda tem itens incompletos:\n\n' +
-      '📌 Tarefa: Lista de Cálculo 3\n' +
-      '📚 Disciplina: Cálculo 1\n' +
-      '📅 Prazo: 12/06/2026\n' +
-      '🔴 Prioridade: Alta\n\n' +
+      ' Tarefa: Lista de Cálculo 3\n' +
+      ' Disciplina: Cálculo 1\n' +
+      ' Prazo: 12/06/2026\n' +
+      ' Prioridade: Alta\n\n' +
       'Status do checklist:\n' +
-      '✅ Questões ímpares — concluído\n' +
-      '❌ Questões pares — pendente\n' +
-      '❌ Conferir gabarito — pendente\n\n' +
+      ' Questões ímpares — concluído\n' +
+      ' Questões pares — pendente\n' +
+      ' Conferir gabarito — pendente\n\n' +
       'Você completou 1 de 3 itens. Restam 2 itens para finalizar a tarefa.\n\n' +
       'Dica do UniBot: separe pelo menos 1h hoje à noite para concluir as questões pares e conferir o gabarito antes de entregar.',
     actions: [
       { label: 'Ir para tarefas', screen: 'tasks' },
-      { label: 'Perguntar ao UniBot', screen: 'ai-assistant' },
     ],
     time: 'Há 5 horas',
     read: false,
@@ -134,10 +132,10 @@ const initialNotifications: Notification[] = [
     summary: 'Vagas em Cálculo 1, Física 1 e Algoritmos. Prazo: 30/06.',
     detail:
       'Inscrições abertas para o Programa de Monitoria 2026/1:\n\n' +
-      '📋 Edital: Nº 08/2026 — DEG/UnB\n' +
-      '📅 Período de inscrição: até 30/06/2026\n' +
-      '📅 Resultado: 10/07/2026\n' +
-      '📅 Início das atividades: 01/08/2026\n\n' +
+      ' Edital: Nº 08/2026 — DEG/UnB\n' +
+      ' Período de inscrição: até 30/06/2026\n' +
+      ' Resultado: 10/07/2026\n' +
+      ' Início das atividades: 01/08/2026\n\n' +
       'Disciplinas com vagas compatíveis com o seu perfil:\n' +
       '• Cálculo 1 (MAT0025) — 3 vagas\n' +
       '• Física 1 (FIS0110) — 2 vagas\n' +
@@ -161,11 +159,11 @@ const initialNotifications: Notification[] = [
     summary: 'Prova 2 marcada para 20/06 às 08h. O UniBot pode ajudar com os estudos.',
     detail:
       'Lembrete de prova próxima:\n\n' +
-      '📚 Disciplina: Cálculo 1 (MAT0025)\n' +
-      '📅 Data: 20/06/2026 — sábado\n' +
-      '🕐 Horário: 08h00\n' +
-      '📍 Local: ICC Sul — AT-024/6\n' +
-      '👨‍🏫 Professor: Prof. Ricardo Alves\n\n' +
+      ' Disciplina: Cálculo 1 (MAT0025)\n' +
+      ' Data: 20/06/2026 — sábado\n' +
+      ' Horário: 08h00\n' +
+      ' Local: ICC Sul — AT-024/6\n' +
+      ' Professor: Prof. Ricardo Alves\n\n' +
       'Conteúdo cobrado (Prova 2):\n' +
       '• Derivadas: regras de derivação, regra da cadeia\n' +
       '• Aplicações de derivadas: máximos, mínimos, taxa de variação\n' +
@@ -177,7 +175,6 @@ const initialNotifications: Notification[] = [
       'Você tem 11 dias — tempo suficiente para uma boa preparação. Peça ao UniBot um plano de estudos detalhado!',
     actions: [
       { label: 'Ver minhas provas', screen: 'exams' },
-      { label: 'Perguntar ao UniBot', screen: 'ai-assistant' },
     ],
     time: 'Ontem, 09h',
     read: true,
@@ -190,20 +187,19 @@ const initialNotifications: Notification[] = [
     detail:
       'Olá, Roberto! Seja bem-vindo ao UniGuia — sua central acadêmica da UnB.\n\n' +
       'Seu perfil foi configurado com sucesso:\n' +
-      '👤 Nome: Roberto Costa\n' +
-      '🎓 Curso: Engenharia de Software\n' +
-      '🏛️ Campus: Darcy Ribeiro\n' +
-      '📅 Semestre: 4º semestre — 2026/1\n\n' +
+      ' Nome: Roberto Costa\n' +
+      ' Curso: Engenharia de Software\n' +
+      ' Campus: Darcy Ribeiro\n' +
+      ' Semestre: 4º semestre — 2026/1\n\n' +
       'O que você pode fazer no UniGuia:\n\n' +
-      '📚 Disciplinas — acompanhe faltas, progresso e atividades\n' +
-      '📅 Cronograma — visualize aulas, provas e prazos\n' +
-      '✅ Tarefas — organize atividades em um quadro Kanban\n' +
-      '🏆 Bolsas e auxílios — encontre oportunidades compatíveis\n' +
-      '📋 Editais — acompanhe prazos e status de inscrições\n' +
-      '🤖 UniBot — seu assistente acadêmico com IA\n\n' +
+      ' Disciplinas — acompanhe faltas, progresso e atividades\n' +
+      ' Cronograma — visualize aulas, provas e prazos\n' +
+      ' Tarefas — organize atividades em um quadro Kanban\n' +
+      ' Bolsas e auxílios — encontre oportunidades compatíveis\n' +
+      ' Editais — acompanhe prazos e status de inscrições\n' +
+      ' UniBot — seu assistente acadêmico com IA\n\n' +
       'Dica: comece conversando com o UniBot para montar seu cronograma da semana!',
     actions: [
-      { label: 'Conhecer o UniBot', screen: 'ai-assistant' },
       { label: 'Ver meu perfil', screen: 'profile' },
     ],
     time: '08/06, 10h',
@@ -216,9 +212,9 @@ const initialNotifications: Notification[] = [
     summary: 'O resultado do Edital PIBIC 2025–2026 foi publicado. Acesse o SIGAA.',
     detail:
       'O resultado do Edital PIBIC 2025–2026 foi publicado pelo DEG/UnB.\n\n' +
-      '📋 Edital: CNPq/UnB Nº 01/2025\n' +
-      '📅 Publicação do resultado: 07/06/2026\n' +
-      '📅 Início das atividades: 01/08/2026\n\n' +
+      ' Edital: CNPq/UnB Nº 01/2025\n' +
+      ' Publicação do resultado: 07/06/2026\n' +
+      ' Início das atividades: 01/08/2026\n\n' +
       'Como verificar seu resultado:\n' +
       '1. Acesse sig.unb.br\n' +
       '2. Vá em Módulo Bolsas → PIBIC → Minha Candidatura\n' +
@@ -289,22 +285,6 @@ export default function Notifications({ onNavigate }: NavProps) {
             </button>
           )}
         </div>
-
-        {unreadCount > 0 && (
-          <div className="flex gap-2">
-            {(['edital', 'prova', 'bolsa', 'tarefa'] as const).map(type => {
-              const count = unread.filter(n => n.type === type).length;
-              if (!count) return null;
-              return (
-                <div key={type} className="flex items-center gap-1.5 px-2.5 py-1 rounded-full"
-                  style={{ background: 'rgba(255,255,255,0.12)' }}>
-                  <span style={{ fontSize: '11px' }}>{typeConfig[type].icon}</span>
-                  <span style={{ color: '#fff', fontSize: '11px', fontWeight: '600' }}>{count}</span>
-                </div>
-              );
-            })}
-          </div>
-        )}
       </div>
 
       {/* List */}
@@ -372,14 +352,7 @@ function NotifCard({ notif, onOpen }: CardProps) {
     >
       <div className="flex items-start gap-3" style={{ padding: '14px' }}>
         {/* Icon */}
-        <div className="flex items-center justify-center flex-shrink-0"
-          style={{
-            width: '42px', height: '42px', borderRadius: '13px', fontSize: '21px',
-            background: notif.read ? '#f1f5f9' : cfg.bg,
-            border: notif.read ? '1px solid #e2e8f0' : `1px solid ${cfg.border}`,
-          }}>
-          {cfg.icon}
-        </div>
+        
 
         {/* Text */}
         <div className="flex-1 min-w-0">
@@ -441,13 +414,6 @@ function NotifModal({ notif, onClose, onNavigate }: ModalProps) {
 
         {/* Modal header */}
         <div className="flex items-start gap-3 px-5 pt-3 pb-4" style={{ flexShrink: 0, borderBottom: '1px solid #f1f5f9' }}>
-          <div className="flex items-center justify-center flex-shrink-0"
-            style={{
-              width: '48px', height: '48px', borderRadius: '15px', fontSize: '24px',
-              background: cfg.bg, border: `1.5px solid ${cfg.border}`,
-            }}>
-            {cfg.icon}
-          </div>
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-1">
               <span

@@ -61,7 +61,7 @@ export default function WelcomeScreen({ onNavigate }: NavProps) {
             { icon: BookOpen, label: 'Disciplinas' },
             { icon: Calendar, label: 'Cronograma' },
             { icon: Award, label: 'Bolsas' },
-            { icon: Sparkles, label: 'Assistente IA' },
+            { icon: Sparkles, label: 'Cursos' },
           ].map(({ icon: Icon, label }) => (
             <div
               key={label}

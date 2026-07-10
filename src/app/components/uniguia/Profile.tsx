@@ -39,13 +39,6 @@ export default function Profile({ onNavigate }: NavProps) {
             </button>
             <h2 className="font-bold" style={{ color: '#ffffff', fontSize: '20px' }}>Meu Perfil</h2>
           </div>
-          <button
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl"
-            style={{ background: 'rgba(255,255,255,0.15)', color: '#fff', fontSize: '12px' }}
-          >
-            <Edit3 className="w-3.5 h-3.5" />
-            Editar
-          </button>
         </div>
 
         {/* Avatar + name */}

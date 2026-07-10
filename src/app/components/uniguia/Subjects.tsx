@@ -109,7 +109,6 @@ export default function Subjects({ onNavigate }: NavProps) {
               style={{
                 background: '#fff',
                 borderRadius: '16px',
-                overflow: 'hidden',
                 border: '1px solid #e2e8f0',
                 boxShadow: '0 1px 4px rgba(0,0,0,0.04)',
               }}
@@ -134,7 +133,7 @@ export default function Subjects({ onNavigate }: NavProps) {
               </div>
 
               {/* Details */}
-              <div style={{ padding: '0 14px 12px', borderTop: '1px solid #f8fafc' }}>
+              <div style={{ padding: '10px 14px 14px', borderTop: '1px solid #f8fafc' }}>
                 <div className="flex flex-col gap-1.5 mb-3">
                   <div className="flex items-center gap-2">
                     <User className="w-3 h-3 flex-shrink-0" style={{ color: '#94a3b8' }} />
@@ -182,7 +181,7 @@ export default function Subjects({ onNavigate }: NavProps) {
                     style={{ background: nextColors.bg }}
                   >
                     <span style={{ color: nextColors.color, fontSize: '11px', fontWeight: '500' }}>
-                      📌 {sub.nextActivity}
+                       {sub.nextActivity}
                     </span>
                   </div>
                 </div>

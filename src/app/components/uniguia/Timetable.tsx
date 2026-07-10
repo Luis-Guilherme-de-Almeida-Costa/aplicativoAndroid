@@ -32,11 +32,11 @@ const events: Event[] = [
 ];
 
 const typeStyle: Record<string, { bg: string; text: string; border: string; icon: string }> = {
-  aula:     { bg: '#dbeafe', text: '#1e40af', border: '#bfdbfe', icon: '📚' },
-  estudo:   { bg: '#dcfce7', text: '#15803d', border: '#bbf7d0', icon: '📖' },
-  prova:    { bg: '#fef2f2', text: '#b91c1c', border: '#fecaca', icon: '📝' },
-  prazo:    { bg: '#fef9c3', text: '#92400e', border: '#fde047', icon: '⏰' },
-  trabalho: { bg: '#f5f3ff', text: '#6d28d9', border: '#ddd6fe', icon: '💼' },
+  aula:     { bg: '#dbeafe', text: '#1e40af', border: '#bfdbfe', icon: '' },
+  estudo:   { bg: '#dcfce7', text: '#15803d', border: '#bbf7d0', icon: '' },
+  prova:    { bg: '#fef2f2', text: '#b91c1c', border: '#fecaca', icon: '' },
+  prazo:    { bg: '#fef9c3', text: '#92400e', border: '#fde047', icon: '' },
+  trabalho: { bg: '#f5f3ff', text: '#6d28d9', border: '#ddd6fe', icon: '' },
 };
 
 const HOURS = Array.from({ length: 14 }, (_, i) => i + 7); // 7h–20h
@@ -54,12 +54,7 @@ export default function Timetable({ onNavigate }: NavProps) {
       <div style={{ background: '#1a3a6b', padding: '16px 20px 16px' }}>
         <div className="flex items-center justify-between mb-3">
           <h2 className="font-bold" style={{ color: '#ffffff', fontSize: '20px' }}>Cronograma</h2>
-          <button
-            className="flex items-center justify-center"
-            style={{ width: '32px', height: '32px', borderRadius: '10px', background: 'rgba(255,255,255,0.15)' }}
-          >
-            <Plus className="w-4 h-4 text-white" />
-          </button>
+          
         </div>
 
         {/* View toggle */}

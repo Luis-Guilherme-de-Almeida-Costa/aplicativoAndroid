@@ -204,7 +204,7 @@ export default function Research({ onNavigate }: NavProps) {
                       {project.type}
                     </span>
                     {project.salary
-                      ? <span style={{ color: '#16a34a', fontSize: '10px', fontWeight: '700' }}>💰 {project.salary}</span>
+                      ? <span style={{ color: '#16a34a', fontSize: '10px', fontWeight: '700' }}></span>
                       : <span style={{ color: '#64748b', fontSize: '10px', fontWeight: '600' }}>Voluntário</span>
                     }
                   </div>

@@ -71,7 +71,7 @@ const subjects: Subject[] = [
     bg: '#eff6ff',
     topics: ['Limites e Continuidade', 'Derivadas', 'Regras de Derivação', 'Integrais', 'Teorema Fundamental'],
     lessons: [
-      { id: 1, title: 'Introdução ao Cálculo e Limites',       duration: '42min', videoUrl: null },
+      { id: 1, title: 'Introdução ao Cálculo e Limites',       duration: '42min', videoUrl: 'https://www.youtube.com/embed/sjssQaCNnYg' },
       { id: 2, title: 'Continuidade de Funções',               duration: '38min', videoUrl: null },
       { id: 3, title: 'Derivadas — Conceito e Notação',        duration: '51min', videoUrl: null },
       { id: 4, title: 'Regra da Cadeia e Derivação Implícita', duration: '47min', videoUrl: null },
@@ -569,7 +569,7 @@ function StarRating({ value }: { value: number }) {
 // ─────────────────────────────────────────────────────────────────────────────
 // VIDEO PLAYER
 // Para ativar: troque videoUrl de null para uma URL de embed do YouTube
-// Ex: "https://www.youtube.com/embed/SEU_VIDEO_ID"
+// Ex: "https://www.youtube.com/embed/sjssQaCNnYg"
 // ─────────────────────────────────────────────────────────────────────────────
 
 function VideoPlayer({ videoUrl, lessonTitle }: { videoUrl: string | null; lessonTitle: string }) {
@@ -665,7 +665,7 @@ function QuizSection({ exercises, accentColor, accentBg }: {
 
         <div style={{ textAlign: 'center' }}>
           <p style={{ fontSize: '22px', fontWeight: '800', color: pass ? '#15803d' : '#b91c1c' }}>
-            {pass ? 'Parabéns! 🎉' : 'Continue praticando!'}
+            {pass ? 'Parabéns!' : 'Continue praticando!'}
           </p>
           <p style={{ color: '#64748b', fontSize: '13px', marginTop: '4px' }}>
             Você acertou <strong>{score}</strong> de <strong>{total}</strong> questões
@@ -856,7 +856,7 @@ function QuizSection({ exercises, accentColor, accentBg }: {
               : <XCircle    className="w-4 h-4" style={{ color: '#dc2626', flexShrink: 0 }} />
             }
             <p style={{ fontSize: '13px', fontWeight: '800', color: isCorrect ? '#15803d' : '#b91c1c' }}>
-              {isCorrect ? 'Correto! 🎉' : 'Errado!'}
+              {isCorrect ? 'Correto!' : 'Errado!'}
             </p>
           </div>
           {isWrong && (
@@ -924,7 +924,7 @@ function SubjectDetail({ subject, onBack }: { subject: Subject; onBack: () => vo
       <div style={{ background: '#fff', borderBottom: '1px solid #e2e8f0', flexShrink: 0, display: 'flex' }}>
         {(['aulas', 'exercicios'] as DetailTab[]).map(t => {
           const active = tab === t;
-          const label  = t === 'aulas' ? '▶  Aulas' : '✏️  Exercícios';
+          const label  = t === 'aulas' ? '  Aulas' : 'Exercícios';
           return (
             <button key={t} onClick={() => setTab(t)} className="flex-1 py-3"
               style={{
@@ -950,7 +950,7 @@ function SubjectDetail({ subject, onBack }: { subject: Subject; onBack: () => vo
             {/* Video zone */}
             <div style={{ background: '#0f172a', padding: '14px' }}>
               <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '10px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>
-                ▶ AULA ATUAL
+                 AULA ATUAL
               </p>
               <VideoPlayer videoUrl={activeLesson.videoUrl} lessonTitle={activeLesson.title} />
               <p style={{ color: '#fff', fontSize: '13px', fontWeight: '700', marginTop: '10px' }}>{activeLesson.title}</p>
@@ -969,18 +969,6 @@ function SubjectDetail({ subject, onBack }: { subject: Subject; onBack: () => vo
                 </div>
               </div>
 
-              {/* Topics */}
-              <div style={{ background: '#fff', borderRadius: '16px', padding: '14px 16px', border: '1px solid #e2e8f0' }}>
-                <p style={{ color: '#0f172a', fontSize: '13px', fontWeight: '700', marginBottom: '10px' }}>Conteúdo programático</p>
-                {subject.topics.map((t, i) => (
-                  <div key={i} className="flex items-center gap-2.5 mb-2.5">
-                    <div style={{ width: '20px', height: '20px', borderRadius: '6px', background: subject.bg, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                      <span style={{ fontSize: '9px', fontWeight: '700', color: subject.color }}>{i + 1}</span>
-                    </div>
-                    <span style={{ color: '#475569', fontSize: '12px' }}>{t}</span>
-                  </div>
-                ))}
-              </div>
 
               {/* Lessons list */}
               <div style={{ background: '#fff', borderRadius: '16px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
@@ -1020,7 +1008,6 @@ function SubjectDetail({ subject, onBack }: { subject: Subject; onBack: () => vo
             {/* Banner */}
             <div style={{ background: subject.color, padding: '12px 16px' }}>
               <div className="flex items-center gap-2">
-                <span style={{ fontSize: '16px' }}>✏️</span>
                 <div>
                   <p style={{ color: '#fff', fontSize: '13px', fontWeight: '700' }}>Exercícios — {subject.name}</p>
                   <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '11px' }}>{subject.exercises.length} questões de múltipla escolha</p>
@@ -1122,8 +1109,8 @@ export default function Courses({ onNavigate }: NavProps) {
                     <div className="flex items-center gap-3">
                       <div className="flex items-center gap-1"><BookOpen className="w-3 h-3" style={{ color: '#94a3b8' }} /><span style={{ color: '#64748b', fontSize: '10px' }}>{subject.lessons.length} aulas</span></div>
                       <div className="flex items-center gap-1"><Clock className="w-3 h-3" style={{ color: '#94a3b8' }} /><span style={{ color: '#64748b', fontSize: '10px' }}>{subject.hours}h</span></div>
-                      <div className="flex items-center gap-1" style={{ background: subject.bg, borderRadius: '6px', padding: '2px 6px' }}>
-                        <span style={{ color: subject.color, fontSize: '9px', fontWeight: '700' }}>✏️ {subject.exercises.length} exerc.</span>
+                      <div className="flex items-center gap-1" style={{ borderRadius: '6px', padding: '2px 6px' }}>
+                        <span style={{ color: subject.color, fontSize: '9px', fontWeight: '700' }}>{subject.exercises.length} exerc.</span>
                       </div>
                     </div>
                     <ChevronRight className="w-4 h-4" style={{ color: subject.color, flexShrink: 0 }} />

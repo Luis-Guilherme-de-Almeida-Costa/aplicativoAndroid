@@ -205,7 +205,7 @@ export default function WorkloadAnalysis({ onNavigate }: NavProps) {
         </div>
 
         {/* ── Subjects difficulty list ── */}
-        <div style={{ background: '#fff', borderRadius: '16px', overflow: 'hidden', border: '1px solid #e2e8f0', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
+        <div style={{ background: '#fff', borderRadius: '16px', border: '1px solid #e2e8f0', boxShadow: '0 1px 4px rgba(0,0,0,0.04)' }}>
           <div style={{ padding: '14px 16px 10px', borderBottom: '1px solid #f1f5f9' }}>
             <p style={{ color: '#0f172a', fontSize: '14px', fontWeight: '700' }}>Matérias mais difíceis</p>
             <p style={{ color: '#94a3b8', fontSize: '11px', marginTop: '2px' }}>Dificuldade percebida pelos estudantes</p>
@@ -214,10 +214,10 @@ export default function WorkloadAnalysis({ onNavigate }: NavProps) {
           {subjects
             .slice()
             .sort((a, b) => b.difficulty - a.difficulty)
-            .map((sub, idx) => (
+            .map((sub, idx, arr) => (
               <div key={sub.code} style={{
                 padding: '12px 16px',
-                borderBottom: idx < subjects.length - 1 ? '1px solid #f8fafc' : 'none',
+                borderBottom: idx < arr.length - 1 ? '1px solid #f8fafc' : 'none',
               }}>
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center gap-2">

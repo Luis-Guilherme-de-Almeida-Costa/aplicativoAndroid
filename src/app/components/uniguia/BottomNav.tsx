@@ -141,7 +141,7 @@ export default function BottomNav({ currentScreen, onNavigate }: BottomNavProps)
       {/* Sliding sidebar */}
       <div
         style={{
-          position: 'absolute', top: 48, left: 0, bottom: 0, width: '190px',
+          position: 'absolute', top: 0, left: 0, bottom: 0, width: '190px',
           background: '#ffffff', zIndex: 25, borderRight: '1px solid #e2e8f0',
           boxShadow: open ? '4px 0 20px rgba(0,0,0,0.12)' : 'none',
           transform: open ? 'translateX(0)' : 'translateX(-100%)',
@@ -150,7 +150,7 @@ export default function BottomNav({ currentScreen, onNavigate }: BottomNavProps)
           paddingTop: '64px', paddingBottom: '20px', overflowY: 'auto',
         }}
       >
-        <p style={{ color: '#94a3b8', fontSize: '10px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.08em', paddingLeft: '20px', marginBottom: '8px' }}>
+        <p style={{ color: '#94a3b8', fontSize: '10px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.08em', paddingLeft: '20px', marginBottom: '8px', marginTop: '40px' }}>
           Navegação
         </p>
 

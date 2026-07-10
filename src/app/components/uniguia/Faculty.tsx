@@ -332,8 +332,8 @@ function TeacherDetail({ teacher, onBack }: { teacher: Teacher; onBack: () => vo
         <div className="flex gap-2 mt-4">
           {[
             { label: 'Avaliação', value: avgDisplay, icon: '★' },
-            { label: 'Avaliações', value: teacher.totalReviews, icon: '💬' },
-            { label: 'Disciplinas', value: teacher.courses.length, icon: '📚' },
+            { label: 'Avaliações', value: teacher.totalReviews, icon: '' },
+            { label: 'Disciplinas', value: teacher.courses.length, icon: '' },
           ].map(({ label, value, icon }) => (
             <div key={label} className="flex-1 rounded-xl p-2.5 text-center" style={{ background: 'rgba(255,255,255,0.14)' }}>
               <p style={{ color: '#fff', fontSize: '16px', fontWeight: '800' }}>{icon} {value}</p>
@@ -347,7 +347,7 @@ function TeacherDetail({ teacher, onBack }: { teacher: Teacher; onBack: () => vo
       <div style={{ background: '#fff', borderBottom: '1px solid #e2e8f0', flexShrink: 0, display: 'flex' }}>
         {(['perfil', 'avaliacoes'] as DetailTab[]).map(t => {
           const active = tab === t;
-          const label  = t === 'perfil' ? '👤  Perfil' : '⭐  Avaliações';
+          const label  = t === 'perfil' ? '  Perfil' : '  Avaliações';
           return (
             <button key={t} onClick={() => setTab(t)} className="flex-1 py-3"
               style={{
@@ -565,7 +565,7 @@ function TeacherDetail({ teacher, onBack }: { teacher: Teacher; onBack: () => vo
             {/* Disclaimer */}
             <div style={{ background: '#fef9c3', borderRadius: '12px', padding: '10px 14px', border: '1px solid #fde047' }}>
               <p style={{ color: '#92400e', fontSize: '11px', lineHeight: 1.5 }}>
-                🔒 <strong>Avaliações 100% anônimas.</strong> Os comentários refletem a opinião individual dos estudantes e não representam a posição oficial da UnB.
+                 <strong>Avaliações 100% anônimas.</strong> Os comentários refletem a opinião individual dos estudantes e não representam a posição oficial da UnB.
               </p>
             </div>
 

@@ -103,7 +103,7 @@ export default function Notices({ onNavigate }: NavProps) {
       <div style={{ background: '#1a3a6b', padding: '16px 20px 20px' }}>
         <div className="flex items-center gap-3 mb-3">
           <button
-            onClick={() => onNavigate('scholarships')}
+            onClick={() => onNavigate('dashboard')}
             className="flex items-center justify-center"
             style={{ width: '32px', height: '32px', borderRadius: '10px', background: 'rgba(255,255,255,0.15)' }}
           >
@@ -187,7 +187,7 @@ export default function Notices({ onNavigate }: NavProps) {
                     <p style={{ color: '#94a3b8', fontSize: '10px', marginBottom: '4px' }}>{notice.number}</p>
                     <p style={{ color: '#64748b', fontSize: '11px', marginBottom: '8px' }}>{notice.details}</p>
                     <div className="flex items-center justify-between">
-                      <span style={{ color: '#94a3b8', fontSize: '11px' }}>📅 {notice.deadline}</span>
+                      <span style={{ color: '#94a3b8', fontSize: '11px' }}> {notice.deadline}</span>
                       <button
                         onClick={() => onNavigate('document-checklist')}
                         className="flex items-center gap-1 px-3 py-1.5 rounded-xl"

@@ -85,7 +85,7 @@ export default function ScheduleBuilder({ onNavigate }: NavProps) {
             }}
           >
             <span style={{ color: subjectColors[code]?.text, fontSize: '10px', fontWeight: '600' }}>
-              {code === 'CONFLICT' ? '⚠️' : ''} {name}
+              {code === 'CONFLICT' ? '' : ''} {name}
             </span>
           </div>
         ))}
@@ -130,7 +130,7 @@ export default function ScheduleBuilder({ onNavigate }: NavProps) {
                   >
                     {code && (
                       <span style={{ color: style!.text, fontSize: '7.5px', fontWeight: '700', textAlign: 'center', lineHeight: 1, padding: '0 2px' }}>
-                        {code === 'CONFLICT' ? '⚠️' : code}
+                        {code === 'CONFLICT' ? 'CONFLITO' : code}
                       </span>
                     )}
                   </div>
@@ -143,19 +143,6 @@ export default function ScheduleBuilder({ onNavigate }: NavProps) {
 
       {/* Action buttons */}
       <div className="p-4 flex flex-col gap-2">
-        <button
-          className="w-full flex items-center justify-center gap-2 font-semibold"
-          style={{
-            background: 'linear-gradient(90deg, #7c3aed, #1d4ed8)',
-            color: '#fff',
-            padding: '14px',
-            borderRadius: '14px',
-            fontSize: '14px',
-          }}
-        >
-          <Sparkles className="w-4 h-4" />
-          Gerar melhor grade com IA
-        </button>
         <button
           onClick={() => onNavigate('timetable')}
           className="w-full flex items-center justify-center gap-2 font-semibold"

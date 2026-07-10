@@ -10,10 +10,10 @@ const todayRoutine = [
 ];
 
 const typeIcons: Record<string, string> = {
-  aula: '📚',
-  tarefa: '✅',
-  estudo: '📖',
-  edital: '📋',
+  aula: '',
+  tarefa: '',
+  estudo: '',
+  edital: '',
 };
 
 export default function Dashboard({ onNavigate }: NavProps) {
@@ -218,7 +218,7 @@ export default function Dashboard({ onNavigate }: NavProps) {
         {/* Editais importantes */}
         <div style={{ background: '#fff', borderRadius: '16px', padding: '14px', border: '1px solid #e2e8f0' }}>
           <div className="flex items-center justify-between mb-3">
-            <span className="font-semibold" style={{ color: '#1e293b', fontSize: '14px' }}>📋 Editais Importantes</span>
+            <span className="font-semibold" style={{ color: '#1e293b', fontSize: '14px' }}> Editais Importantes</span>
             <button onClick={() => onNavigate('notices')} style={{ color: '#1d4ed8', fontSize: '12px', fontWeight: '500' }}>
               Ver todos →
             </button>

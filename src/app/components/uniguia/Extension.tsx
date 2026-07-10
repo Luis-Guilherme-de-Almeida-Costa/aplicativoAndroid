@@ -221,10 +221,7 @@ export default function Extension({ onNavigate }: NavProps) {
                       {project.category}
                     </span>
                     <span style={{ color: '#64748b', fontSize: '10px', fontWeight: '600' }}>{project.modality}</span>
-                    {project.salary
-                      ? <span style={{ color: '#15803d', fontSize: '10px', fontWeight: '700' }}>💰 {project.salary}</span>
-                      : <span style={{ color: '#64748b', fontSize: '10px' }}>Voluntário</span>
-                    }
+                  
                   </div>
                   <p className="font-bold" style={{ color: '#0f172a', fontSize: '14px', marginBottom: '2px' }}>{project.title}</p>
                   <p style={{ color: '#64748b', fontSize: '12px', marginBottom: '6px' }}>{project.coordinator} · {project.department}</p>

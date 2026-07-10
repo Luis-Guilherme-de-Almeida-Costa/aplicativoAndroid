@@ -440,7 +440,7 @@ function ExamCard({ exam, onEdit, onDelete, onToggle, confirmDelete, onCancelDel
               </div>
               {!exam.done && (
                 <span style={{ color: '#dc2626', fontSize: '10px', fontWeight: '600' }}>
-                  📅 {exam.date}
+                   {exam.date}
                 </span>
               )}
               {exam.done && (
@@ -461,13 +461,13 @@ function ExamCard({ exam, onEdit, onDelete, onToggle, confirmDelete, onCancelDel
             {!exam.done && (
               <div className="flex flex-col gap-1 mb-2">
                 {exam.time && (
-                  <span style={{ color: '#64748b', fontSize: '12px' }}>🕐 {exam.time}h</span>
+                  <span style={{ color: '#64748b', fontSize: '12px' }}> {exam.time}h</span>
                 )}
                 {exam.room && (
-                  <span style={{ color: '#64748b', fontSize: '12px' }}>📍 {exam.room}</span>
+                  <span style={{ color: '#64748b', fontSize: '12px' }}> {exam.room}</span>
                 )}
                 {exam.notes && (
-                  <span style={{ color: '#64748b', fontSize: '12px' }}>📝 {exam.notes}</span>
+                  <span style={{ color: '#64748b', fontSize: '12px' }}> {exam.notes}</span>
                 )}
               </div>
             )}

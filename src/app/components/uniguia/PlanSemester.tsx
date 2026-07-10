@@ -158,18 +158,18 @@ export default function PlanSemester({ onNavigate }: NavProps) {
                   </div>
                   <p className="font-semibold" style={{ color: '#0f172a', fontSize: '14px' }}>{sub.name}</p>
                   <div className="flex items-center gap-3 mt-1.5">
-                    <span style={{ color: '#64748b', fontSize: '11px' }}>🕐 {sub.schedule}</span>
+                    <span style={{ color: '#64748b', fontSize: '11px' }}> {sub.schedule}</span>
                     <span style={{ color: '#64748b', fontSize: '11px' }}>• {sub.credits} cr.</span>
                     <span style={{ color: '#64748b', fontSize: '11px' }}>• {sub.class}</span>
                   </div>
                   <div className="flex items-center gap-1 mt-1">
                     <div style={{
                       width: '6px', height: '6px', borderRadius: '50%',
-                      background: sub.seats > 10 ? '#22c55e' : sub.seats > 0 ? '#f59e0b' : '#ef4444',
+                      background: sub.seats > 10 ? '' : sub.seats > 0 ? '' : '',
                     }} />
                     <span style={{
                       fontSize: '11px',
-                      color: sub.seats > 10 ? '#16a34a' : sub.seats > 0 ? '#ca8a04' : '#dc2626',
+                      color: sub.seats > 10 ? '' : sub.seats > 0 ? '' : '',
                     }}>
                       {sub.seats} vagas disponíveis
                     </span>
